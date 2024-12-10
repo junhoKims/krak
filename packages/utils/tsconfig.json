@@ -1,5 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@krak/typescript-config/react-library.json",
+  "extends": "@krak/typescript-config/react-internal.json",
   "exclude": ["node_modules", "dist"]
 }

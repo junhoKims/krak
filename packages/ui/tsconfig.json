@@ -1,5 +1,5 @@
 {
-  "extends": "@krak/typescript-config/react-library.json",
+  "extends": "@krak/typescript-config/react-internal.json",
   "compilerOptions": {
     "outDir": "dist"
   },

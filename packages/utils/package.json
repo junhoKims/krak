@@ -6,6 +6,7 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
+    "@krak/eslint-config": "workspace:^",
     "@krak/typescript-config": "workspace:*"
   },
   "publishConfig": {
