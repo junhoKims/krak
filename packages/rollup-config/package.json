@@ -1,0 +1,15 @@
+{
+  "name": "@krak/rollup-config",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "devDependencies": {
+    "@krak/eslint-config": "workspace:^",
+    "@rollup/plugin-commonjs": "28.0.2",
+    "@rollup/plugin-image": "3.0.3",
+    "@rollup/plugin-json": "6.1.0",
+    "@rollup/plugin-node-resolve": "16.0.0"
+  }
+}
