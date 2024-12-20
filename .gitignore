@@ -39,3 +39,7 @@ yarn-error.log*
 
 # ESLint
 .eslintcache
+
+.next/
+.vercel
+next-env.d.ts
