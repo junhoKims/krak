@@ -186,6 +186,14 @@ importers:
         specifier: 8.18.0
         version: 8.18.0(eslint@9.16.0(jiti@1.21.7))(typescript@5.7.2)
 
+  packages/global-types: {}
+
+  packages/rollup-config:
+    devDependencies:
+      '@krak/eslint-config':
+        specifier: workspace:^
+        version: link:../eslint-config
+
   packages/typescript-config: {}
 
   packages/ui:
