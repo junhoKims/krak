@@ -6,7 +6,7 @@ import { baseConfig } from '@krak/eslint-config';
 export default [
   ...baseConfig,
   {
-    files: ['**/*.{js,cjs,mjs,ts}'],
+    files: ['**/*.{js,cjs,mjs,ts,d.ts}'],
   },
   {
     languageOptions: {

@@ -1,4 +1,5 @@
 import tseslint from 'typescript-eslint';
+import globals from 'globals';
 import unusedImports from 'eslint-plugin-unused-imports';
 import turboPlugin from 'eslint-plugin-turbo';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
@@ -30,15 +31,23 @@ export const config = [
       '@typescript-eslint/no-non-null-assertion': 'off',
     },
   }),
+
   {
     name: 'Config LanguageOption',
     languageOptions: {
       ecmaVersion: 'latest',
+      globals: {
+        ...globals.node,
+      },
       parserOptions: {
         projectService: true,
         tsconfigRootDir: process.cwd(),
       },
     },
+  },
+  {
+    name: 'Config ignore patterns',
+    ignores: ['node_modules/**', 'dist/**', 'build/**', 'storybook-static'],
   },
   {
     name: 'Config import plugin',
@@ -111,9 +120,5 @@ export const config = [
         },
       ],
     },
-  },
-  {
-    name: 'Config ignore patterns',
-    ignores: ['node_modules/**', 'dist/**', 'build/**', 'storybook-static'],
   },
 ];
