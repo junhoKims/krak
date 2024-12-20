@@ -1,0 +1,26 @@
+{
+  "name": "@krak/uitest",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && rollup -c rollup.config.js --silent"
+  },
+  "devDependencies": {
+    "@krak/eslint-config": "workspace:^",
+    "@krak/rollup-config": "workspace:^",
+    "@krak/typescript-config": "workspace:^",
+    "@types/global-types": "workspace:^",
+    "@types/react": ">=18",
+    "@types/react-dom": ">=18",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "peerDependencies": {
+    "@types/react": ">=18",
+    "@types/react-dom": ">=18",
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}

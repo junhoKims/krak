@@ -23,7 +23,7 @@ export const config = [
   },
   ...tseslint.config({
     name: 'Config Typescript',
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.{ts,tsx,d.cts,d.ts,d.mts}'],
     extends: [tseslint.configs.strictTypeChecked, tseslint.configs.stylisticTypeChecked],
     rules: {
       '@typescript-eslint/no-import-type-side-effects': 'error',
@@ -31,20 +31,6 @@ export const config = [
       '@typescript-eslint/no-non-null-assertion': 'off',
     },
   }),
-
-  {
-    name: 'Config LanguageOption',
-    languageOptions: {
-      ecmaVersion: 'latest',
-      globals: {
-        ...globals.node,
-      },
-      parserOptions: {
-        projectService: true,
-        tsconfigRootDir: process.cwd(),
-      },
-    },
-  },
   {
     name: 'Config ignore patterns',
     ignores: ['node_modules/**', 'dist/**', 'build/**', 'storybook-static'],
@@ -119,6 +105,19 @@ export const config = [
           allowList: ['NEXT_PUBLIC_*'],
         },
       ],
+    },
+  },
+  {
+    name: 'Config LanguageOption',
+    languageOptions: {
+      ecmaVersion: 'latest',
+      globals: {
+        ...globals.node,
+      },
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: process.cwd(),
+      },
     },
   },
 ];

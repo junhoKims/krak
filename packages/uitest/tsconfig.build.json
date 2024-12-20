@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "dist",
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "sourceMap": true,
+  },
+  "include": ["src"],
+  "exclude": ["**/*.test.*", "**/*.spec.*", "**/*.stories.*", "**/__storybook__/*", "dist", "build", "node_modules"]
+}

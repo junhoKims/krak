@@ -1,5 +1,4 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Library",
-  "extends": "./base.json"
+  "extends": "@krak/typescript-config/library.json"
 }

@@ -3,7 +3,6 @@
   "display": "React Internal",
   "extends": "./base.json",
   "compilerOptions": {
-    "incremental": true,
     "jsx": "react-jsx",
     "allowJs": true,
     "noEmit": true
